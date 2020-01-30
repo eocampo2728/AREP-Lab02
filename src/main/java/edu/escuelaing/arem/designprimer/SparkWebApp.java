@@ -37,7 +37,7 @@ public class SparkWebApp {
                 "       <form action=\"/answer\">\n" +
                 "           Enter the numbers:<br>\n" +
                 "           <input type=\"text\" placeholder=\"Ex: 1 2 3 4 5\" name=\"input\" ><br>\n" +
-                "           <input type=\"submit\" value=\"Calculate!\">\n" +
+                "           <input type=\"submit\" value=\"Calculate\">\n" +
                 "       </form>" +
                 "</body></html>";
         return indexHTML;
