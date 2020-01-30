@@ -62,13 +62,10 @@ public class SparkWebApp {
                 "   </head><body>\n" +
                 "      <p><b>Calculo de Datos Estadisticos</b></p>\n" +
                 "       <h2>Results</h2>" +
-                "       <p>Mean and Standar Deviation values</p>\n\n" +
-
-
                 "       <table style=\"width:30%\">\n" +
                 "           <tr>\n" +
-                "               <th>Results</th>\n" +
-                "               <th><b>Set #1</b></th> \n" +
+                "               <th>Calculation</th>\n" +
+                "               <th><b>Answer</b></th> \n" +
                 "           </tr>\n" +
                 "           <tr>\n" +
                 "               <td><b>Mean</b></td>\n" +
