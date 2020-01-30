@@ -16,7 +16,7 @@ public class SparkWebApp {
         port(getPort());
         get("/hello", (req, res) -> "Hello Heroku");
 
-        get("/index", (req, res) -> index(req,res));
+        get("/", (req, res) -> index(req,res));
         get("/answer", (req, res) -> answer(req,res));
 
     }
@@ -34,12 +34,12 @@ public class SparkWebApp {
                 "      <title>mean and standardD</title>\n" +
                 "   </head><body>\n<h2>Mean and Standar Deviation</h2>\n" +
                 "      <p>Web application capable of calculating the mean and standard deviation of a set of numbers\n\n</p>\n" +
-                "       <form action=\"/results\">\n" +
+                "       <form action=\"/answer\">\n" +
                 "           First set of Numbers:<br>\n" +
                 "           <input type=\"text\" placeholder=\"Separated by spaces\" name=\"input\" ><br>\n" +
                 "           <input type=\"submit\" value=\"Calculate!\">\n" +
                 "       </form>"+
-                "       <a href = \"http://localhost:5000/results\" target = \"_self\">See Results</a>\n" +
+                "       <a href = \"http://localhost:5000/answer\" target = \"_self\">See Results</a>\n" +
                 "   </body></html>";
         return indexHTML;
     }
