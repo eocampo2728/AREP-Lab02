@@ -16,8 +16,8 @@ public class SparkWebApp {
         port(getPort());
         get("/hello", (req, res) -> "Hello Heroku");
 
-        get("/index", (req, res) -> index(req,res));
-        get("/answer", (req, res) -> answer(req,res));
+        get("/", (req, res) -> index(req, res));
+        get("/answer", (req, res) -> answer(req, res));
 
     }
 
@@ -28,7 +28,7 @@ public class SparkWebApp {
         return 5000; //returns default port if heroku-port isn't set(i.e. on localhost)
     }
 
-    public static String index(Request req, Response res){
+    public static String index(Request req, Response res) {
         String indexHTML = "<!DOCTYPE html>\n" +
                 "<html><head>\n" +
                 "      <title>Calculator</title>\n" +
@@ -38,22 +38,21 @@ public class SparkWebApp {
                 "           Enter the numbers:<br>\n" +
                 "           <input type=\"text\" placeholder=\"Ex: 1 2 3 4 5\" name=\"input\" ><br>\n" +
                 "           <input type=\"submit\" value=\"Calculate!\">\n" +
-                "       </form>"+
-                "       <a href = \"http://localhost:5000/answer\" target = \"_self\">See Results</a>\n" +
-                "   </body></html>";
+                "       </form>" +
+                "</body></html>";
         return indexHTML;
     }
 
     public static void inputToDouble(String set, LinkedList list) {
-        for (String str: set.split(" ")) {
+        for (String str : set.split(" ")) {
             double var = Double.parseDouble(str);
             list.add(var);
         }
     }
 
-    public static String answer(Request req, Response res){
+    public static String answer(Request req, Response res) {
         String set1 = req.queryParams("input");
-        inputToDouble(set1,lista);
+        inputToDouble(set1, lista);
         mean = Calculator.mean(lista);
         standardDeviation = Calculator.standardDeviation(lista);
 
