@@ -59,18 +59,6 @@ public class SparkWebApp {
         String answerHTML = "<!DOCTYPE html>\n" +
                 "<html><head>\n" +
                 "      <title>mean and standardD</title>\n" +
-                "   <style>" +
-                "       table, th, td {" +
-                "           border: 1px solid black;" +
-                "           border-colapse: collapse;" +
-                "       }" +
-                "       th, td {" +
-                "           padding: 5px;" +
-                "       }" +
-                "       th {" +
-                "           text-align: left;" +
-                "       }" +
-                "   </style>" +
                 "   </head><body>\n" +
                 "      <p><b>Calculo de Datos Estadisticos</b></p>\n" +
                 "       <h2>Results</h2>" +
