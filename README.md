@@ -14,6 +14,9 @@ Esta aplicacion esta [desplegada con herku](https://arep-lab02.herokuapp.com/), 
 ## Use
 Para usar la aplicación toca acceder al link y usar el cuadro de texto para escribir la lista de numeros separadas por un espacio, despues oprimir el boton de calculate, y en la siguiente pagina se mostrara el resultado del calculo.
 
+##CircleCi
+[![CircleCI](https://circleci.com/gh/eocampo2728/AREP-Lab02.svg?style=svg)](https://circleci.com/gh/eocampo2728/AREP-Lab02)
+
 ## Autor
 Eduardo Ocampo
 
